@@ -16,6 +16,7 @@
 		BB068EF822D8A296002E975D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB068EF722D8A296002E975D /* Home.swift */; };
 		BB72AE9D22D8C0E900A24640 /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72AE9C22D8C0E900A24640 /* HomeList.swift */; };
 		BB72AE9F22D8C66300A24640 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72AE9E22D8C66300A24640 /* BlurView.swift */; };
+		BB98D20F22D8C9CA00EEA246 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D20E22D8C9CA00EEA246 /* UpdateList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BB068EF722D8A296002E975D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BB72AE9C22D8C0E900A24640 /* HomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
 		BB72AE9E22D8C66300A24640 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		BB98D20E22D8C9CA00EEA246 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BB068EE722D7A6A7002E975D /* ContentView.swift */,
 				BB068EF722D8A296002E975D /* Home.swift */,
 				BB72AE9C22D8C0E900A24640 /* HomeList.swift */,
+				BB98D20E22D8C9CA00EEA246 /* UpdateList.swift */,
 				BB72AE9E22D8C66300A24640 /* BlurView.swift */,
 				BB068EE922D7A6A9002E975D /* Assets.xcassets */,
 				BB068EEE22D7A6A9002E975D /* LaunchScreen.storyboard */,
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB068EE422D7A6A7002E975D /* AppDelegate.swift in Sources */,
+				BB98D20F22D8C9CA00EEA246 /* UpdateList.swift in Sources */,
 				BB72AE9D22D8C0E900A24640 /* HomeList.swift in Sources */,
 				BB068EE622D7A6A7002E975D /* SceneDelegate.swift in Sources */,
 				BB068EF822D8A296002E975D /* Home.swift in Sources */,

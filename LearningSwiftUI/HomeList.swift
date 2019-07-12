@@ -13,8 +13,8 @@ struct HomeList : View {
     
     var body: some View {
         VStack {
-            HStack(spacing: 30) {
-                VStack {
+            HStack {
+                VStack(alignment: .leading) {
                     Text("Courses")
                         .font(.largeTitle)
                         .fontWeight(.heavy)
@@ -24,7 +24,7 @@ struct HomeList : View {
                 Spacer()
             }
             .padding(.leading, 70.0)
-            .padding(.bottom, 40)
+                .padding(.bottom, 40)
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
@@ -40,8 +40,9 @@ struct HomeList : View {
                     }
                 }
                 .padding(.leading, 40)
-                Spacer()
+                    .padding(.bottom, 60)
             }
+            Spacer()
         }
         .padding(.top, 78.0)
     }
