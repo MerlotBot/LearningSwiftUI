@@ -18,6 +18,7 @@
 		BB72AE9F22D8C66300A24640 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72AE9E22D8C66300A24640 /* BlurView.swift */; };
 		BB98D20F22D8C9CA00EEA246 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D20E22D8C9CA00EEA246 /* UpdateList.swift */; };
 		BB98D21122D8CC6B00EEA246 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D21022D8CC6B00EEA246 /* UpdateDetail.swift */; };
+		BB98D21322D8CD3200EEA246 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D21222D8CD3200EEA246 /* UpdateStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BB72AE9E22D8C66300A24640 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		BB98D20E22D8C9CA00EEA246 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		BB98D21022D8CC6B00EEA246 /* UpdateDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
+		BB98D21222D8CD3200EEA246 /* UpdateStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				BB72AE9C22D8C0E900A24640 /* HomeList.swift */,
 				BB98D20E22D8C9CA00EEA246 /* UpdateList.swift */,
 				BB98D21022D8CC6B00EEA246 /* UpdateDetail.swift */,
+				BB98D21222D8CD3200EEA246 /* UpdateStore.swift */,
 				BB72AE9E22D8C66300A24640 /* BlurView.swift */,
 				BB068EE922D7A6A9002E975D /* Assets.xcassets */,
 				BB068EEE22D7A6A9002E975D /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB068EE422D7A6A7002E975D /* AppDelegate.swift in Sources */,
+				BB98D21322D8CD3200EEA246 /* UpdateStore.swift in Sources */,
 				BB98D20F22D8C9CA00EEA246 /* UpdateList.swift in Sources */,
 				BB72AE9D22D8C0E900A24640 /* HomeList.swift in Sources */,
 				BB98D21122D8CC6B00EEA246 /* UpdateDetail.swift in Sources */,
