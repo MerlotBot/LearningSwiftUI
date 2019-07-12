@@ -12,17 +12,38 @@ struct HomeList : View {
     var courses = coursesData
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
+        VStack {
             HStack(spacing: 30) {
-                ForEach(courses) { item in
-                    PresentationLink(destination: ContentView()) {
-                        CourseView(title: item.title, image: item.image, color: item.color, shadowColor: item.shadowColor)
+                VStack {
+                    Text("Courses")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                    Text("22 courses")
+                        .color(.gray)
+                }
+                Spacer()
+            }
+            .padding(.leading, 70.0)
+            .padding(.bottom, 40)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 30) {
+                    ForEach(courses) { item in
+                        PresentationLink(destination: ContentView()) {
+                            CourseView(
+                                title: item.title,
+                                image: item.image,
+                                color: item.color,
+                                shadowColor: item.shadowColor
+                            )
+                        }
                     }
                 }
+                .padding(.leading, 40)
+                Spacer()
             }
-            .padding(.leading, 30)
-            Spacer()
         }
+        .padding(.top, 78.0)
     }
 }
 
@@ -46,7 +67,7 @@ struct CourseView : View {
                 .font(.title)
                 .fontWeight(.bold)
                 .color(.white)
-                .padding(20)
+                .padding(30)
                 .lineLimit(4)
                 .padding(.trailing, 50)
             Spacer()
