@@ -9,13 +9,18 @@
 import SwiftUI
 
 struct HomeList : View {
+    var courses = coursesData
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
-                ForEach(0..<3) { item in
-                    CourseView()
+            HStack(spacing: 30) {
+                ForEach(courses) { item in
+                    PresentationLink(destination: ContentView()) {
+                        CourseView(title: item.title, image: item.image, color: item.color, shadowColor: item.shadowColor)
+                    }
                 }
             }
+            .padding(.leading, 30)
             Spacer()
         }
     }
@@ -30,21 +35,54 @@ struct HomeList_Previews : PreviewProvider {
 #endif
 
 struct CourseView : View {
+    var title = "Build an app with SwiftUI"
+    var image = "Illustration1"
+    var color = Color("background3")
+    var shadowColor = Color("backgroundShadow3")
+    
     var body: some View {
         return VStack(alignment: .leading) {
-            Text("Build an app with SwiftUI")
+            Text(title)
                 .font(.title)
                 .fontWeight(.bold)
                 .color(.white)
                 .padding(20)
                 .lineLimit(4)
-                .frame(width: 150)
+                .padding(.trailing, 50)
             Spacer()
-            Image("Illustration1")
+            Image(image)
+                .resizable()
+                .renderingMode(.original)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 246, height: 150)
+                .padding(.bottom, 30)
         }
-        .background(Color("background3"))
+        .background(color)
             .cornerRadius(30)
             .frame(width: 246, height: 360)
-            .shadow(color: Color("backgroundShadow3"), radius: 20, x: 0, y: 20)
+            .shadow(color: shadowColor, radius: 20, x: 0, y: 20)
     }
 }
+
+struct Course : Identifiable {
+    var id = UUID()
+    var title: String
+    var image: String
+    var color: Color
+    var shadowColor: Color
+}
+
+let coursesData = [
+    Course(
+        title: "Build an app with SwiftUI",
+        image: "Illustration1",
+        color: Color("background3"),
+        shadowColor: Color("backgroundShadow3")
+    ),
+    Course(
+        title: "Design Course",
+        image: "Illustration2",
+        color: Color("background4"),
+        shadowColor: Color("backgroundShadow4")
+    )
+]

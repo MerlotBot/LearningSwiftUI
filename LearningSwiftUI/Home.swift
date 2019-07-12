@@ -14,6 +14,7 @@ struct Home : View {
     
     var body: some View {
         ZStack {
+            
             ContentView()
                 .background(Color.white)
                 .cornerRadius(30)
@@ -25,8 +26,8 @@ struct Home : View {
                 .offset(x: -30, y: showProfile ? 0 : 80)
                 .animation(.spring())
             
-            MenuRight(show: $show)
-                .offset(x: -16, y: showProfile ? 0 : 80)
+            MenuRight(show: $showProfile)
+                .offset(x: -16, y: showProfile ? 0 : 88)
                 .animation(.spring())
             
             MenuView(show: $show)
@@ -41,6 +42,7 @@ struct Home_Previews : PreviewProvider {
     }
 }
 #endif
+
 struct MenuRow : View {
     var image = "creditcard"
     var text = "My Account"
