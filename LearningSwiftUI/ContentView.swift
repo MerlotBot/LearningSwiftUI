@@ -32,11 +32,11 @@ struct ContentView : View {
                 .rotationEffect(Angle(degrees: show ? 15 : 0))
                 //                .rotation3DEffect(Angle(degrees: show ? 50 : 0), axis: (x: 10.0, y: 10.0, z: 10.0))
                 .blendMode(.hardLight)
-                .animation(.basic(duration: 0.7, curve: .easeInOut))
+                .animation(.basic(duration: 0.6, curve: .easeInOut))
                 .offset(x: viewState.width, y: viewState.height)
             
             CardView()
-                .background(show ? Color.red : Color("background8"))
+                .background(show ? Color("background5") : Color("background8"))
                 .cornerRadius(10)
                 .shadow(radius: 20)
                 .offset(x: 0, y: show ? -200 : -20)
@@ -44,15 +44,16 @@ struct ContentView : View {
                 .rotationEffect(Angle(degrees: show ? 10 : 0))
                 //                .rotation3DEffect(Angle(degrees: show ? 40 : 0), axis: (x: 10.0, y: 10.0, z: 10.0))
                 .blendMode(.hardLight)
-                .animation(.basic(duration: 0.5, curve: .easeInOut))
+                .animation(.basic(duration: 0.4, curve: .easeInOut))
                 .offset(x: viewState.width, y: viewState.height)
+            
             
             CertificateView()
                 .offset(x: viewState.width, y: viewState.height)
                 .scaleEffect(0.95)
                 .rotationEffect(Angle(degrees: show ? 5 : 0))
                 //                .rotation3DEffect(Angle(degrees: show ? 30 : 0), axis: (x: 10.0, y: 10.0, z: 10.0))
-                .animation(.spring(mass: 1, stiffness: 100, damping: 10, initialVelocity: 100))
+                .animation(.spring(mass: 1, stiffness: 100, damping: 10, initialVelocity: 0))
                 .tapAction {
                     self.show.toggle()
             }
