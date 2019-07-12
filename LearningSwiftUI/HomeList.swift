@@ -40,9 +40,7 @@ struct HomeList : View {
                     }
                 }
                 .padding(.leading, 40)
-                    .padding(.bottom, 60)
             }
-            Spacer()
         }
         .padding(.top, 78.0)
     }
